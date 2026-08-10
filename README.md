@@ -162,8 +162,6 @@ You will be prompted interactively for the PR URL, raw URL, and host cluster nam
 ---
 
 ## Security notes
-
-- Never commit `.env` or real credentials — `.gitignore` excludes `.env` and certificate files.
 - All credentials are injected at runtime via environment variables or Kubernetes secrets.
 - The vcluster is ephemeral and isolated; it does not affect any production or staging environment.
 - Rotate your `OC_TOKEN` and `BB_APP_PASSWORD` regularly; treat them as short-lived credentials.
